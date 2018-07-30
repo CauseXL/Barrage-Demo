@@ -1,0 +1,17 @@
+# node.js
+node_modules/
+
+# os
+.DS_Store
+
+# editors
+.idea/
+.vscode/
+
+# NPM
+npm-debug.log
+
+# seo
+public/
+
+errorShots/
