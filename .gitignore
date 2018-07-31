@@ -11,7 +11,7 @@ node_modules/
 # NPM
 npm-debug.log
 
-# seo
-public/
+# bundle
+dist/
 
 errorShots/

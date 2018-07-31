@@ -7,7 +7,4 @@ module.exports = merge(common, {
     devServer: {
         contentBase: './dist'
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
 });
