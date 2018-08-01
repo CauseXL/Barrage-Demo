@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Output Management</title>
+    <style>
+        #cantainer {
+            text-align: center;
+        }
+        
+        #content {
+            width: 640px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        #canvas {
+            position: absolute;
+        }
+        
+        video {
+            width: 640px;
+            height: 360px;
+        }
+        
+        input {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cantainer">
+        <h2>Canvas + WebSocket + Redis 实现视频弹幕</h2>
+        <div id="content">
+            <canvas id="canvas"></canvas>
+            <video id="video" src="src/test.mp4" controls></video>
+        </div>
+        <!-- 输入弹幕内容 -->
+        <input type="text" id="text">
+        <!-- 添加弹幕按钮 -->
+        <button id="add">发送</button>
+        <!-- 选择文字颜色 -->
+        <input type="color" id="color">
+        <!-- 调整字体大小 -->
+        <input type="range" max="40" min="20" id="range">
+    </div>
+    <script type="text/javascript" src="dist/app.js"></script>
+</body>
+
+</html>
